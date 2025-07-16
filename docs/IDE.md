@@ -6,11 +6,14 @@
 
 #### 線上版
 
-* [CODEPEN](https://codepen.io/) →一個網站前端設計開發平台，針對網站前端代碼的一個工具，上面有各種效果的案例特效（炫技），可以在他們的demo 基礎上開發自己的前端設計。
-* [JSBIN ](https://jsbin.com/?html,css,js,output)→輕量級在線編輯器網站
-* [CKEditor](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/quick-start.html) →是一款專門使用在網頁上屬於開放原始碼的所見即所得文字編輯器
+* [CODEPEN](https://codepen.io/): 適合試做單一頁面(介面完善，適合展示靜態範例)。上面有各種效果的案例特效（炫技），可以在他們的demo 基礎上開發自己的前端設計。
+* [StackBlitz](https://stackblitz.com/): 非常方便的線上編輯器，可線上編輯各種主流框架，完成之後也便於在團隊成員中分享，適合用於製作互動式技術文件的範例，或做一些新功能的開發範例。如果本機不想花時間安裝相關框架的開發環境，又想操作一下本篇範例，可以考慮申請一個StackBlitz帳號。
+* [CodeSandbox](https://codesandbox.io/signin?continue=/dashboard?import_repo%3Dtrue): 主要用於前端開發，讓使用者可以快速建立、測試和分享網頁應用程式的程式碼，介面完整，但沒有終端機。
+* [JS BIN](https://jsbin.com/): 輕量級在線編輯器網站，適合臨時測試畫面效果(介面較簡陋，適合用完即丟)
+* [CKEditor](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/quick-start.html): 是一款專門使用在網頁上屬於開放原始碼的所見即所得文字編輯器
   * [教學文章：從安裝到使用心得](https://www.wfublog.com/2017/11/web-wysiwyg-text-editor-ckeditor.html)
   * [文章編輯器教學](https://www.cyberbiz.io/support/?p=21070)
+* [GitHub Codespaces](https://github.com/features/codespaces): 透過 GitHub 原生的完全配置、安全的雲開發環境，讓您更快地啟動和編碼。
 
 ## VSCode 擴充工具
 

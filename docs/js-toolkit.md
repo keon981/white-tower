@@ -1,19 +1,44 @@
 # JavaScript 開發工具集合
 
-## 開發與測試
+- [JavaScript 開發工具集合](#javascript-開發工具集合)
+  - [開發與測試](#開發與測試)
+    - [網頁符號](#網頁符號)
+    - [線上工具](#線上工具)
+    - [套件比較與趨勢](#套件比較與趨勢)
+    - [Chrome 擴充工具](#chrome-擴充工具)
+    - [建構工具](#建構工具)
+    - [測試框架與工具](#測試框架與工具)
+    - [API 模擬與假資料](#api-模擬與假資料)
+  - [框架與函式庫](#框架與函式庫)
+    - [JavaScript 框架](#javascript-框架)
+    - [React UI 元件庫](#react-ui-元件庫)
+    - [狀態管理](#狀態管理)
+    - [資料請求](#資料請求)
+    - [表單與驗證](#表單與驗證)
+    - [應用功能與服務 (Application Features \& Services)](#應用功能與服務-application-features--services)
+    - [各式 JavaScript 輔助工具/函式庫](#各式-javascript-輔助工具函式庫)
+    - [動畫與動態效果](#動畫與動態效果)
+  - [CSS 生態系](#css-生態系)
+    - [CSS 框架與工具](#css-框架與工具)
+  - [資源](#資源)
+    - [OpenData API](#opendata-api)
+    - [參考來源](#參考來源)
 
+## 開發與測試
 
 ### 網頁符號
 * [w3schools HTML Symbols](https://www.w3schools.com/html/html_symbols.asp)
 * [Welcome to HTML Symbols](https://www.htmlsymbols.xyz/)
 
-### 網頁工具
+### 線上工具
 - **語法支援度查詢**
     * [Can I use](http://caniuse.com/): 查詢前端 Web 技術的瀏覽器支援度。
     * [node.js ES2015 support](http://node.green/): 查詢 Node.js 對 ECMAScript 各版本特性的支援度。
 *  **響應式設計工具 (Responsive Design Tools)**
     * [Responsively App](https://responsively.app/): 一款專為前端開發設計的瀏覽器，可以將多個裝置的畫面並排顯示在一個視窗中，並同步所有互動（如滾動、點擊），極大地提升了開發響應式網頁的效率。
     * [Multi Device Website Mockup Generator](http://techsini.com/multi-mockup/index.php): 一個簡單的線上工具，輸入網址後可以快速生成網站在不同裝置（桌面、筆電、平板、手機）上的預覽截圖。
+* **網頁測試工具**
+    * [Testing Playground](https://testing-playground.com/): 一款簡單的線上網頁測試工具，支援多種瀏覽器的測試。
 
 ### 套件比較與趨勢
 - [npm trends](https://npmtrends.com/): 比較 npm 套件的下載趨勢。
@@ -83,7 +108,6 @@
     * [placekitten](http://placekitten.com/)  貓奴專用假圖
     * [lorem.space](https://lorem.space/)  包括電影、遊戲、專輯、書籍等封面，大頭照、鞋子、手錶、家俱等
 
-
 ## 框架與函式庫
 
 ### JavaScript 框架
@@ -106,6 +130,47 @@
         * [SolidStart](https://start.solidjs.com/): Solid.js 的官方全端框架。
     * **Qwik**
         * [QwikCity](https://qwik.builder.io/qwikcity/): Qwik 的官方全端框架。
+
+
+### React UI 元件庫
+* **完整 UI 元件庫 (Component Libraries)**
+    * [Material UI (MUI)](https://mui.com/): 基於 Google Material Design 指導原則的 React UI 框架，是當下最流行的選擇之一。
+    * [Ant Design](https://ant.design/index-cn): 螞蟻集團推出的企業級 UI 設計語言和 React 元件庫，廣泛用於中後台產品。
+        * [Ant Motion](https://motion.ant.design/): Ant Design 的動態效果設計規範與元件庫。
+    * [Base Web](https://baseweb.design/): Uber 開發的可訪問性優先的元件庫。
+    * [React Bootstrap](https://github.com/react-bootstrap/react-bootstrap): 將 Bootstrap 元件用 React 重構，使其更符合 React 的開發模式。
+* **無頭元件 (Headless Components)**
+    * [Radix UI](https://www.radix-ui.com/): 專注於可訪問性的無頭元件庫，不提供樣式。
+    * [Headless UI](https://headlessui.com/) 是由現在非常熱門的 Tailwindcss 團隊來開發的，與 Tailwind CSS 無縫整合的無頭元件。
+    * [Chakra UI](https://github.com/chakra-ui/chakra-ui): 一個簡單、模組化且高度可訪問的 UI 元件庫。它提供了良好的預設樣式，同時也極易客製化，兼具了完整元件庫和 Headless UI 的優點。
+        * 雖然官方並沒有明確表示 Chakra UI 是 Headless 元件庫，但 Chakra UI 提供的基礎樣式確實比較單調，但他也一樣能夠完全客製化調整元件的所有樣式，因此也可以視為 Headless 元件庫。
+        * ==特別強調 accessibility== ，也就是說這個元件庫是考慮到了各種不同使用網站的情境，對於一些公部門的案子對這部分有比較高要求的話，這會是一個好選擇。
+    * [Horizon UI](https://horizon-ui.com/): 基於 **Chakra UI** 進行二次開發的元件庫，專為快速搭建美觀的後台管理儀表板（Admin Dashboard）而設計。
+    * [NextUI](https://nextui.org/):  基於 Tailwind CSS 和 React Aria 的 UI 庫。
+    * [Horizon UI](https://horizon-ui.com/): 基於 Chakra UI 的後台儀表板。
+    * [React Aria](https://react-spectrum.adobe.com/react-aria/): Adobe 打造的無頭 UI Hooks，專注於行為與可訪問性。
+* **可複製貼上的元件集 (Copy-paste Components)**
+    * [Shadcn/ui](https://ui.shadcn.com/): 一個基於 **Radix UI** 和 **Tailwind CSS** 構建的可重用元件集。它不是一個元件庫，而是一系列你可以直接複製貼到應用中的元件。
+* **特定功能元件庫**
+    * **資料顯示與輸入**
+        * [TanStack Table](https://tanstack.com/table): 用於建立強大表格和資料網格的無頭 UI 工具。
+        * [ChatUI](https://chatui.io/components/card):  對話式 UI 元件庫。
+        * [react-textarea-autosize](https://www.npmjs.com/package/react-textarea-autosize): 一個輕量級的 React 元件，能讓 `<textarea>` 根據使用者輸入的內容自動調整高度。
+    *[Shuffle.js](https://vestride.github.io/Shuffle/): 響應式、可篩選的網格佈局函式庫。
+    * **圖表函式庫 (Charting Libraries)**
+        * [D3.js](https://d3js.org/): 資資料驅動文件的視覺化標準，提供強大的底層 API。
+        * [C3.js](https://c3js.org/):  基於 D3.js 的可重用圖表庫，簡化了圖表生成。
+        * [Recharts](https://recharts.org/en-US/):  基於 React 和 D3 的圖表庫，提供聲明式的 React 元件。
+        * [Chart.js](https://www.chartjs.org/docs/latest/): 簡單靈活的 JavaScript 圖表庫。
+        * [Highcharts](https://www.highcharts.com/): 功能強大且成熟的商業圖表庫。
+        * [Victory](https://formidable.com/open-source/victory/docs/): 由 Formidable 團隊開發的 React 和 React Native 圖表元件集合，以其組合性和易於客製化著稱。
+    * **資料匯出 (Data Export)**
+        * [SheetJS](https://docs.sheetjs.com/): 用於讀取、編輯和匯出多種電子表格格式（如 XLSX, XLS, CSV）的強大函式庫。
+        * [ExcelJS](https://github.com/exceljs/exceljs): 一個可以讀取、操作和寫入 Excel XLSX 和 CSV 檔案的函式庫，支援豐富的樣式和功能。
+    * **畫布與白板**
+        * [tldraw](https://www.tldraw.com/): 一個功能強大、易於整合的開源白板函式庫。
+        * [Excalidraw](https://excalidraw.com/): 一個非常受歡迎的虛擬白板工具，用於繪製手繪風格的圖表。
+
 
 ### 狀態管理
 * [Zustand](https://github.com/pmndrs/zustand): 提供了一種輕量級、直觀的狀態管理方式，適合那些追求簡潔和高效的 React 開發者。它的主要特點是易於上手，無需繁瑣的設定和模板，使得狀態管理更加靈活和直觀。
@@ -173,47 +238,6 @@
     * [ahooks](https://github.com/alibaba/hooks/tree/master): React Hooks Library 之一
     * [awesome-react-hooks ](https://github.com/rehooks/awesome-react-hooks)- 包含文件、教學以及各地搜集的 hook 資源
     * [react-use](https://github.com/streamich/react-use?tab=readme-ov-file): React Hooks 的集合. 移植 [libreact](https://github.com/streamich/libreact).
-
-
-### React UI 元件庫
-* **完整 UI 元件庫 (Component Libraries)**
-    * [Material UI (MUI)](https://mui.com/): 基於 Google Material Design 指導原則的 React UI 框架，是當下最流行的選擇之一。
-    * [Ant Design](https://ant.design/index-cn): 螞蟻集團推出的企業級 UI 設計語言和 React 元件庫，廣泛用於中後台產品。
-        * [Ant Motion](https://motion.ant.design/): Ant Design 的動態效果設計規範與元件庫。
-    * [Base Web](https://baseweb.design/): Uber 開發的可訪問性優先的元件庫。
-    * [React Bootstrap](https://github.com/react-bootstrap/react-bootstrap): 將 Bootstrap 元件用 React 重構，使其更符合 React 的開發模式。
-* **無頭元件 (Headless Components)**
-    * [Radix UI](https://www.radix-ui.com/): 專注於可訪問性的無頭元件庫，不提供樣式。
-    * [Headless UI](https://headlessui.com/) 是由現在非常熱門的 Tailwindcss 團隊來開發的，與 Tailwind CSS 無縫整合的無頭元件。
-    * [Chakra UI](https://github.com/chakra-ui/chakra-ui): 一個簡單、模組化且高度可訪問的 UI 元件庫。它提供了良好的預設樣式，同時也極易客製化，兼具了完整元件庫和 Headless UI 的優點。
-        * 雖然官方並沒有明確表示 Chakra UI 是 Headless 元件庫，但 Chakra UI 提供的基礎樣式確實比較單調，但他也一樣能夠完全客製化調整元件的所有樣式，因此也可以視為 Headless 元件庫。
-        * ==特別強調 accessibility== ，也就是說這個元件庫是考慮到了各種不同使用網站的情境，對於一些公部門的案子對這部分有比較高要求的話，這會是一個好選擇。
-    * [Horizon UI](https://horizon-ui.com/): 基於 **Chakra UI** 進行二次開發的元件庫，專為快速搭建美觀的後台管理儀表板（Admin Dashboard）而設計。
-    * [NextUI](https://nextui.org/):  基於 Tailwind CSS 和 React Aria 的 UI 庫。
-    * [Horizon UI](https://horizon-ui.com/): 基於 Chakra UI 的後台儀表板。
-    * [React Aria](https://react-spectrum.adobe.com/react-aria/): Adobe 打造的無頭 UI Hooks，專注於行為與可訪問性。
-* **可複製貼上的元件集 (Copy-paste Components)**
-    * [Shadcn/ui](https://ui.shadcn.com/): 一個基於 **Radix UI** 和 **Tailwind CSS** 構建的可重用元件集。它不是一個元件庫，而是一系列你可以直接複製貼到應用中的元件。
-* **特定功能元件庫**
-    * **資料顯示與輸入**
-        * [TanStack Table](https://tanstack.com/table): 用於建立強大表格和資料網格的無頭 UI 工具。
-        * [ChatUI](https://chatui.io/components/card):  對話式 UI 元件庫。
-        * [react-textarea-autosize](https://www.npmjs.com/package/react-textarea-autosize): 一個輕量級的 React 元件，能讓 `<textarea>` 根據使用者輸入的內容自動調整高度。
-    *[Shuffle.js](https://vestride.github.io/Shuffle/): 響應式、可篩選的網格佈局函式庫。
-    * **圖表函式庫 (Charting Libraries)**
-        * [D3.js](https://d3js.org/): 資資料驅動文件的視覺化標準，提供強大的底層 API。
-        * [C3.js](https://c3js.org/):  基於 D3.js 的可重用圖表庫，簡化了圖表生成。
-        * [Recharts](https://recharts.org/en-US/):  基於 React 和 D3 的圖表庫，提供聲明式的 React 元件。
-        * [Chart.js](https://www.chartjs.org/docs/latest/): 簡單靈活的 JavaScript 圖表庫。
-        * [Highcharts](https://www.highcharts.com/): 功能強大且成熟的商業圖表庫。
-        * [Victory](https://formidable.com/open-source/victory/docs/): 由 Formidable 團隊開發的 React 和 React Native 圖表元件集合，以其組合性和易於客製化著稱。
-    * **資料匯出 (Data Export)**
-        * [SheetJS](https://docs.sheetjs.com/): 用於讀取、編輯和匯出多種電子表格格式（如 XLSX, XLS, CSV）的強大函式庫。
-        * [ExcelJS](https://github.com/exceljs/exceljs): 一個可以讀取、操作和寫入 Excel XLSX 和 CSV 檔案的函式庫，支援豐富的樣式和功能。
-    * **畫布與白板**
-        * [tldraw](https://www.tldraw.com/): 一個功能強大、易於整合的開源白板函式庫。
-        * [Excalidraw](https://excalidraw.com/): 一個非常受歡迎的虛擬白板工具，用於繪製手繪風格的圖表。
-
 
 ### 動畫與動態效果
 這些函式庫和工具專注於為網頁帶來豐富的視覺動態效果，從簡單的 CSS 過渡到複雜的 JavaScript 動畫。
