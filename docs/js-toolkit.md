@@ -1,16 +1,14 @@
 # JavaScript 開發工具集合
 
 - [JavaScript 開發工具集合](#javascript-開發工具集合)
-  - [開發與測試](#開發與測試)
+  - [開發工具](#開發工具)
     - [網頁符號](#網頁符號)
     - [線上工具](#線上工具)
     - [套件比較與趨勢](#套件比較與趨勢)
     - [Chrome 擴充工具](#chrome-擴充工具)
-    - [建構工具](#建構工具)
-    - [測試框架與工具](#測試框架與工具)
-    - [API 模擬與假資料](#api-模擬與假資料)
   - [框架與函式庫](#框架與函式庫)
-    - [JavaScript 框架](#javascript-框架)
+    - [建構工具](#建構工具)
+    - [Web Development Frameworks 框架](#web-development-frameworks-框架)
     - [React UI 元件庫](#react-ui-元件庫)
     - [狀態管理](#狀態管理)
     - [資料請求](#資料請求)
@@ -20,11 +18,13 @@
     - [動畫與動態效果](#動畫與動態效果)
   - [CSS 生態系](#css-生態系)
     - [CSS 框架與工具](#css-框架與工具)
+  - [測試框架與工具](#測試框架與工具)
+    - [API 模擬與假資料](#api-模擬與假資料)
   - [資源](#資源)
     - [OpenData API](#opendata-api)
     - [參考來源](#參考來源)
 
-## 開發與測試
+## 開發工具
 
 ### 網頁符號
 * [w3schools HTML Symbols](https://www.w3schools.com/html/html_symbols.asp)
@@ -54,6 +54,8 @@
 * [Wappalyzer 分析工具](https://www.wappalyzer.com/apps/): 分析網站使用的技術棧。
 * [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en): 是一款由 facebook 開發的 chrome 偵錯工具，透過這個工具可以看到 React 元件的結構，我們還可以直接編輯或是查看元件的 props / state ，讓整個開發流程更順利。
 
+
+## 框架與函式庫
 ### 建構工具
 能自動對代碼執行檢驗、轉換、壓縮等功能的工具
 * **Module Bundler(模組打包與編譯工具)**
@@ -76,60 +78,24 @@
     * [env-cmd](https://www.npmjs.com/package/env-cmd): 允許將環境變數分組到 `.env` 檔案中，並在執行腳本時載入它們。
     * [react-dotenv](https://www.npmjs.com/package/react-dotenv): 讓 React 應用能夠輕鬆讀取 `.env` 檔案中的環境變數。
 
-### 測試框架與工具
-* **單元測試**
-    * **測試框架 (Test Runners)**
-        * [Vitest](https://cn.vitest.dev/): 由 Vite 驅動的極速單元測試框架。
-        * [Jest](https://jestjs.io/): 功能全面的 JavaScript 單元測試框架，由 Facebook 維護。
-    * **測試函式庫 (Testing Libraries)**
-        * [Testing Library](https://testing-library.com/): 專注於「使用者行為」的測試函式庫，鼓勵開發者撰寫更健壯、更易維護的測試。其核心理念是**測試你的應用程式，而不是測試實現細節**。
-        * [jsdom](https://github.com/jsdom/jsdom):  Node.js 中用純 JavaScript 模擬眾多 Web 標準的函式庫。
-* **端對端測試 (E2E，End-to-End Testing)**
-    * [Cypress](https://www.cypress.io/): 現代化的端對端測試工具，提供完整的測試體驗。
-    * [WebdriverIO](https://cn.vitest.dev/guide/comparisons): 可擴展的瀏覽器和行動端自動化測試框架。
-
-### API 模擬與假資料
-在前後端分離的開發模式中，這些工具讓我們能夠獨立於後端進行開發、測試和除錯。
-* **API 模擬**
-    * [Postman](https://www.postman.com/downloads/): 業界標準的 API 協作平台與測試工具。它提供了一個強大的圖形化介面，讓開發者可以輕鬆地發送各種 HTTP 請求（GET, POST 等）來測試和除錯 API，是後端開發與前端串接時的必備神器。
-    * [Mock Service Worker (MSW)](https://mswjs.io/): 在網路層攔截請求的 API 模擬庫，這意味著程式碼完全不需要修改，就能無縫地與模擬 API 互動，無論是 REST API 還是 GraphQL 都支援。
-    * [JSON Server](https://github.com/typicode/json-server): 快速搭建功能完整的 RESTful API 原型。
-* **假資料**
-    * [Faker.js](https://fakerjs.dev/): 可以生成大量逼真的假資料（姓名、地址、圖片等）。
-    * [JSON Generatoｒ](https://json-generator.com/): 客製化 JSON 模擬資料。
-    * [Mockaroo](https://www.mockaroo.com/): 產生模擬資料並以多種格式（JSON、CSV、XML 等）輸出。
-    * [NimbleText](https://nimbletext.com/live): 根據給定格式將行輸入轉換為特定輸出。
-* **假字產生器**
-    * [中文假字產生器](https://textgen.cqd.tw/)
-    * [Lorem Ipsum](https://www.lipsum.com/) 英文假字
-* **假圖產生器**
-    * [fakeimg](https://fakeimg.pl/)
-    * [Lorem Picsum](https://picsum.photos/)
-    * [placekitten](http://placekitten.com/)  貓奴專用假圖
-    * [lorem.space](https://lorem.space/)  包括電影、遊戲、專輯、書籍等封面，大頭照、鞋子、手錶、家俱等
-
-## 框架與函式庫
-
-### JavaScript 框架
+### Web Development Frameworks 框架
 * **Frontend**
   * [React](https://reactjs.org/): 用於建構使用者介面的 JavaScript 函式庫，以其元件化和虛擬 DOM 聞名。
   * [Svelte](https://svelte.dev/): 一個激進的新方法，它在建構階段將元件編譯成高效能的命令式程式碼。
-  * [Solid](https://www.solidjs.com/): 具備現代框架功能的高效能宣告式 UI 函式庫，採用細粒度響應式原理。
-  * [Qwik](https://qwik.builder.io/): 可恢復執行的前端框架，專注於極速的初始載入時間，實現即時互動。
+  * [Solid](https://www.solidjs.com/): 具備現代框架功能的高效能宣告式框架，用於創建高效和反應式 Web 的 JavaScript 庫 介面。
+  * [Qwik](https://qwik.builder.io/): 構建超高速 Web 的開創性框架 載入時間最短的應用程式，在 Web 性能。
   * [Riot.js](https://riot.js.org/): 簡單而優雅的元件化函式庫。
   * [Stencil](https://stenciljs.com/): 用於建構可重用、可擴展 Web Components 的工具鏈。
 * **Backend**
     * [Express](https://expressjs.com/): 快速、極簡的 Node.js Web 應用框架。
-* **Fullstack**
-    * **React**
-        * [Next.js](https://nextjs.org/): 領先的 React 全端框架，支援多種渲染模式。
-        * Remix: 最新版本是 [React Router v7](https://reactrouter.com/start/framework/installation)的框架模式，它使 React Router 的使用和部署更加便利。
-    * **Svelte**
-        * [SvelteKit](https://kit.svelte.dev/): 官方的 Svelte 全端應用框架。
-    * **Solid**
-        * [SolidStart](https://start.solidjs.com/): Solid.js 的官方全端框架。
-    * **Qwik**
-        * [QwikCity](https://qwik.builder.io/qwikcity/): Qwik 的官方全端框架。
+* **Full Stack**
+    * [Next.js](https://nextjs.org/): 一個 React 框架，非常適合構建伺服器端渲染和 靜態 Web 應用程式，提供優化的性能和 簡化的開發流程。
+    * Remix: 最新版本是 [React Router v7](https://reactrouter.com/start/framework/installation)的框架模式，它使 React Router 的使用和部署更加便利。
+    * [Svelte Kit](https://kit.svelte.dev/docs/introduction/): 基於 Svelte 的框架，專為高度開發而設計 高效的 Web 應用程式，優先考慮速度和易用性。
+    * [Solid Start](https://start.solidjs.com/): 一個專注於卓越性能的 SolidJS 框架和一個 增強的開發人員體驗，簡化 Web 開發 過程。
+    * [Qwik City](https://qwik.builder.io/qwikcity/): Qwik 的官方全端框架。
+    * [Astro](https://astro.build/): 用於構建快速、以內容為中心的尖端 Web 框架 網站。它獨特地允許使用多個 UI 框架 如 React、Vue 或 Svelte，將它們渲染為靜態 HTML，以便 增強的頁面速度和用戶體驗。
+
 
 
 ### React UI 元件庫
@@ -302,6 +268,39 @@
     * [Meyer's Reset](https://meyerweb.com/eric/tools/css/reset/): 經典的 CSS Reset，旨在移除所有瀏覽器預設樣式。
     * [Normalize.css](http://necolas.github.io/normalize.css/): 保留有用的預設值，並修正瀏覽器之間的樣式不一致。
     * [A Modern CSS Reset](https://andy-bell.co.uk/a-more-modern-css-reset/): 基於現代 CSS 特性的重置方案。
+
+
+## 測試框架與工具
+* **單元測試**
+    * **測試框架 (Test Runners)**
+        * [Vitest](https://cn.vitest.dev/):  Vite 提供快速的單元測試框架，而 Playwright 是 非常適合跨多個瀏覽器進行端到端測試。
+        * [Jest](https://jestjs.io/): 功能全面的 JavaScript 單元測試框架，由 Facebook 維護。
+    * **測試函式庫 (Testing Libraries)**
+        * [Testing Library](https://testing-library.com/): 專注於「使用者行為」的測試函式庫，鼓勵開發者撰寫更健壯、更易維護的測試。其核心理念是**測試你的應用程式，而不是測試實現細節**。
+        * [jsdom](https://github.com/jsdom/jsdom):  Node.js 中用純 JavaScript 模擬眾多 Web 標準的函式庫。
+* **端對端測試 (E2E，End-to-End Testing)**
+    * [Cypress](https://www.cypress.io/): 現代化的端對端測試工具，提供完整的測試體驗。
+    * [WebdriverIO](https://cn.vitest.dev/guide/comparisons): 可擴展的瀏覽器和行動端自動化測試框架。
+
+### API 模擬與假資料
+在前後端分離的開發模式中，這些工具讓我們能夠獨立於後端進行開發、測試和除錯。
+* **API 模擬**
+    * [Postman](https://www.postman.com/downloads/): 業界標準的 API 協作平台與測試工具。它提供了一個強大的圖形化介面，讓開發者可以輕鬆地發送各種 HTTP 請求（GET, POST 等）來測試和除錯 API，是後端開發與前端串接時的必備神器。
+    * [Mock Service Worker (MSW)](https://mswjs.io/): 在網路層攔截請求的 API 模擬庫，這意味著程式碼完全不需要修改，就能無縫地與模擬 API 互動，無論是 REST API 還是 GraphQL 都支援。
+    * [JSON Server](https://github.com/typicode/json-server): 快速搭建功能完整的 RESTful API 原型。
+* **假資料**
+    * [Faker.js](https://fakerjs.dev/): 可以生成大量逼真的假資料（姓名、地址、圖片等）。
+    * [JSON Generatoｒ](https://json-generator.com/): 客製化 JSON 模擬資料。
+    * [Mockaroo](https://www.mockaroo.com/): 產生模擬資料並以多種格式（JSON、CSV、XML 等）輸出。
+    * [NimbleText](https://nimbletext.com/live): 根據給定格式將行輸入轉換為特定輸出。
+* **假字產生器**
+    * [中文假字產生器](https://textgen.cqd.tw/)
+    * [Lorem Ipsum](https://www.lipsum.com/) 英文假字
+* **假圖產生器**
+    * [fakeimg](https://fakeimg.pl/)
+    * [Lorem Picsum](https://picsum.photos/)
+    * [placekitten](http://placekitten.com/)  貓奴專用假圖
+    * [lorem.space](https://lorem.space/)  包括電影、遊戲、專輯、書籍等封面，大頭照、鞋子、手錶、家俱等
 
 ## 資源
 
