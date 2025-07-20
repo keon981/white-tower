@@ -11,6 +11,7 @@
     - [Web Development Frameworks 框架](#web-development-frameworks-框架)
     - [React UI 元件庫](#react-ui-元件庫)
     - [狀態管理](#狀態管理)
+    - [Hooks](#hooks)
     - [資料請求](#資料請求)
     - [表單與驗證](#表單與驗證)
     - [應用功能與服務 (Application Features \& Services)](#應用功能與服務-application-features--services)
@@ -62,14 +63,15 @@
     * [Vite](https://vitejs.dev/): 新一代前端建構工具，利用原生 ES 模組提供極速的開發伺服器啟動和熱模組替換 (HMR)。
     * [Webpack](https://webpack.js.org/): 功能強大、生態豐富的模組打包工具，擁有高度的可配置性與大量的插件。
     * [Parcel](https://parceljs.org/): 零設定的網頁應用打包工具，提供開箱即用的開發體驗。
-    * [worker-loader](https://webpack.js.org/loaders/worker-loader/)：一個 Webpack loader，可以將一個獨立的腳本打包成 Web Worker。
-    * [Vite PWA](https://vite-pwa-org.netlify.app/)：一個為 Vite 生態系統設計的零配置 PWA 插件。
+    * [worker-loader](https://webpack.js.org/loaders/worker-loader/): 一個 Webpack loader，可以將一個獨立的腳本打包成 Web Worker。
+    * [Vite PWA](https://vite-pwa-org.netlify.app/): 一個為 Vite 生態系統設計的零配置 PWA 插件。
     * [Gulp](https://gulpjs.com/): 基於串流 (stream) 的自動化建構工具，用於處理重複性的開發任務。
 * **Package Managers(套件管理)**
     * [npm](https://www.npmjs.com/): Node.js 官方套件管理器，隨 Node.js 安裝時內建。
     * [nvm](https://github.com/nvm-sh/nvm): Node.js 版本管理器，可用於快速切換與管理不同的 Node.js 版本。
     * [yarn](https://yarnpkg.com/): 快速、可靠且安全的套件管理器，為 npm 的替代方案之一。
     * [pnpm](https://pnpm.io/zh-TW/): 高效能、節省磁碟空間的套件管理器，解決了 npm/yarn 中重複依賴的問題。
+    * [verdaccio](https://verdaccio.org/): 輕量級的私有 npm registry，可用於建立企業內部的套件倉庫、快取公共套件或測試套件發布。
 * **Linter (語法規範)**
     * [ESLint](https://eslint.org/) 可插拔的 JavaScript linter，用於靜態分析程式碼以快速發現問題並統一團隊編碼風格。
     * [Prettier](https://prettier.io/): 自動化的程式碼格式化工具，支援多種語言，確保程式碼風格一致。
@@ -90,11 +92,11 @@
     * [Express](https://expressjs.com/): 快速、極簡的 Node.js Web 應用框架。
 * **Full Stack**
     * [Next.js](https://nextjs.org/): 一個 React 框架，非常適合構建伺服器端渲染和 靜態 Web 應用程式，提供優化的性能和 簡化的開發流程。
-    * Remix: 最新版本是 [React Router v7](https://reactrouter.com/start/framework/installation)的框架模式，它使 React Router 的使用和部署更加便利。
+    * Remix: 是 Next.js 的最強大替代品之一，最新版本是 [React Router v7](https://reactrouter.com/start/framework/installation)的框架模式，尊重 Web 的運作方式。它並沒有試圖將所有內容抽象為框架的魔力; 相反，它建立在表單、緩存和 HTTP 請求等原生瀏覽器功能之上，併為您提供現代的 React 優先體驗。它也完全與平台無關。
     * [Svelte Kit](https://kit.svelte.dev/docs/introduction/): 基於 Svelte 的框架，專為高度開發而設計 高效的 Web 應用程式，優先考慮速度和易用性。
     * [Solid Start](https://start.solidjs.com/): 一個專注於卓越性能的 SolidJS 框架和一個 增強的開發人員體驗，簡化 Web 開發 過程。
     * [Qwik City](https://qwik.builder.io/qwikcity/): Qwik 的官方全端框架。
-    * [Astro](https://astro.build/): 用於構建快速、以內容為中心的尖端 Web 框架 網站。它獨特地允許使用多個 UI 框架 如 React、Vue 或 Svelte，將它們渲染為靜態 HTML，以便 增強的頁面速度和用戶體驗。
+    * [Astro](https://astro.build/): 用於構建快速、以內容為中心的靜態 Web 框架 網站。它獨特地允許使用多個 UI 框架 如 React、Vue 或 Svelte，將它們渲染為靜態 HTML，以便 增強的頁面速度和用戶體驗。
 
 
 
@@ -122,6 +124,8 @@
         * [TanStack Table](https://tanstack.com/table): 用於建立強大表格和資料網格的無頭 UI 工具。
         * [ChatUI](https://chatui.io/components/card):  對話式 UI 元件庫。
         * [react-textarea-autosize](https://www.npmjs.com/package/react-textarea-autosize): 一個輕量級的 React 元件，能讓 `<textarea>` 根據使用者輸入的內容自動調整高度。
+        * [react-markdown](https://github.com/remarkjs/react-markdown): 將 Markdown 轉換為 React 元件的函式庫。
+        * [llm-ui](https://llm-ui.com/docs/quick-start): 用於構建 LLM 應用程式的 UI 元件庫。
     *[Shuffle.js](https://vestride.github.io/Shuffle/): 響應式、可篩選的網格佈局函式庫。
     * **圖表函式庫 (Charting Libraries)**
         * [D3.js](https://d3js.org/): 資資料驅動文件的視覺化標準，提供強大的底層 API。
@@ -147,6 +151,13 @@
 * [Jotai](https://jotai.org/) 強調原子化的狀態管理，通過將狀態分解為更小、更獨立的單位（原子），實現了更細緻和模塊化的狀態控制。這種方法不僅提升了狀態管理的可維護性，也增強了組件間狀態的可重用性。
 * [XState](https://xstate.js.org/) 以有限狀態機（Finite State Machines）和狀態圖（Statecharts）為基礎，提供了一種結構化的狀態管理方法。它適合於需要精細管理狀態轉換和行為的複雜應用，使狀態的變化更可預測和容易理解。
 
+### Hooks
+
+* :gem: [usehooks-ts](https://usehooks-ts.com/): 是一個 React hooks 函式庫，用 Typescript 寫，易於使用。它提供了一組鉤子，使您能夠更快地建立 React 應用程式。這些鉤子是建立在 DRY（不要重複自己）原則上的。對於您可能需要的最常見用例，有一些掛鉤。
+* [ahooks](https://github.com/alibaba/hooks/tree/master): React Hooks Library 之一
+* [awesome-react-hooks ](https://github.com/rehooks/awesome-react-hooks)- 包含文件、教學以及各地搜集的 hook 資源
+* [react-use](https://github.com/streamich/react-use?tab=readme-ov-file): React Hooks 的集合. 移植 [libreact](https://github.com/streamich/libreact).
+
 ### 資料請求
 * **請求函式庫 (Request Libraries)**
     * [axios](https://github.com/axios/axios): 基於 Promise 的 HTTP 客戶端，可用於瀏覽器和 Node.js，功能豐富且廣受歡迎。
@@ -164,10 +175,10 @@
 
 ### 應用功能與服務 (Application Features & Services)
 * **國際化 (Internationalization - i18n)**
-    * [react-i18next](https://react.i18next.com/)：基於 i18next 的強大國際化框架，是 React 生態中主流的解決方案。
+    * [react-i18next](https://react.i18next.com/): 基於 i18next 的強大國際化框架，是 React 生態中主流的解決方案。
 * **身份驗證 (Authentication)**
-    * [Google Auth Library](https://github.com/google/google-auth-library-nodejs)：Google 官方提供的用於處理 OAuth 2.0 和身份驗證的函式庫。
-        * [@react-oauth/google](https://www.npmjs.com/package/@react-oauth/google)：一個簡化在 React 應用中整合 Google 登入的社群套件。
+    * [Google Auth Library](https://github.com/google/google-auth-library-nodejs): Google 官方提供的用於處理 OAuth 2.0 和身份驗證的函式庫。
+        * [@react-oauth/google](https://www.npmjs.com/package/@react-oauth/google): 一個簡化在 React 應用中整合 Google 登入的社群套件。
 
 
 ### 各式 JavaScript 輔助工具/函式庫
@@ -194,16 +205,13 @@
 * **雜湊與加密 (Hashing & Cryptography)**
     * [hash-wasm](https://github.com/Daninet/hash-wasm): 一個基於 WebAssembly 的輕量級雜湊函式庫，提供了數十種常見的雜湊演算法。
 * **客戶端儲存 (Client-side Storage)**
-    * [localForage](https://github.com/localForage/localForage)：一個 JavaScript 庫，透過非同步儲存（IndexedDB 或 WebSQL）和簡單的 `localStorage` 風格 API 來改善 Web 應用的離線體驗。
-    * [Dexie.js](https://dexie.org/)：一個強大的 IndexedDB 包裝庫，提供了更簡潔、強大的 API、優秀的錯誤處理和查詢能力。
-    * [RxDB](https://rxdb.info/)：一個為 JavaScript 應用設計的本地優先（Local First）、響應式（Reactive）的 NoSQL 資料庫。
+    * [localForage](https://github.com/localForage/localForage): 一個 JavaScript 庫，透過非同步儲存（IndexedDB 或 WebSQL）和簡單的 `localStorage` 風格 API 來改善 Web 應用的離線體驗。
+    * [Dexie.js](https://dexie.org/): 一個強大的 IndexedDB 包裝庫，提供了更簡潔、強大的 API、優秀的錯誤處理和查詢能力。
+    * [RxDB](https://rxdb.info/): 一個為 JavaScript 應用設計的本地優先（Local First）、響應式（Reactive）的 NoSQL 資料庫。
 * **Web Workers**
-    * [Comlink](https://github.com/GoogleChromeLabs/comlink)：由 Google Chrome Labs 開發，它封裝了 `postMessage`，讓 Web Worker 的使用像操作本地的非同步函式一樣簡單。
-* **Hooks**
-    * :gem: [usehooks-ts](https://usehooks-ts.com/): 是一個 React hooks 函式庫，用 Typescript 寫，易於使用。它提供了一組鉤子，使您能夠更快地建立 React 應用程式。這些鉤子是建立在 DRY（不要重複自己）原則上的。對於您可能需要的最常見用例，有一些掛鉤。
-    * [ahooks](https://github.com/alibaba/hooks/tree/master): React Hooks Library 之一
-    * [awesome-react-hooks ](https://github.com/rehooks/awesome-react-hooks)- 包含文件、教學以及各地搜集的 hook 資源
-    * [react-use](https://github.com/streamich/react-use?tab=readme-ov-file): React Hooks 的集合. 移植 [libreact](https://github.com/streamich/libreact).
+    * [Comlink](https://github.com/GoogleChromeLabs/comlink): 由 Google Chrome Labs 開發，它封裝了 `postMessage`，讓 Web Worker 的使用像操作本地的非同步函式一樣簡單。
+* **應用功能與服務**
+    * [@ffmpeg/ffmpeg](https://ffmpegwasm.netlify.app/docs/overview): 在瀏覽器中使用 FFmpeg 進行影片/音訊編碼與轉檔
 
 ### 動畫與動態效果
 這些函式庫和工具專注於為網頁帶來豐富的視覺動態效果，從簡單的 CSS 過渡到複雜的 JavaScript 動畫。

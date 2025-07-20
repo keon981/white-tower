@@ -30,6 +30,11 @@
 - [**Docker**](https://www.docker.com/): 開源的容器化平台，可讓開發者將應用程式及其相依套件、程式庫、系統工具等，全部打包成一個「容器（Container）」單位。這些容器可以在任何支援 Docker 的環境中一致地執行，無論是本地開發機、測試伺服器，還是雲端平台。
 - [**Kubernetes**](https://kubernetes.io/): 開源的容器協同運作與編排平台，其主要功能是自動化部署、擴展和管理大量的容器化應用程式。
 
+## 自動化與工作流程
+- [**n8n**](https://n8n.io/): 開源的工作流程自動化工具，提供視覺化的節點編輯器，可連接各種服務和 API 來建立自動化流程。
+  - [n8n 工作流导航](https://n8nworkflow.net/zh): 这个网站收集已经编排好的 n8n 工作流，目前共有近2000个。
+  - 另有一篇[教程文章](https://www.xda-developers.com/combined-notion-with-n8n-automate-bookmarking/)，通过 n8n 工作流，将网址保存进 Notion 数据库。
+
 ## 網站託管與部署
 
 ### 前端
