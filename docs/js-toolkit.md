@@ -118,6 +118,7 @@
     * [Horizon UI](https://horizon-ui.com/): 基於 Chakra UI 的後台儀表板。
     * [React Aria](https://react-spectrum.adobe.com/react-aria/): Adobe 打造的無頭 UI Hooks，專注於行為與可訪問性。
 * **可複製貼上的元件集 (Copy-paste Components)**
+    * [shadcn.io](https://www.shadcn.io/): 精彩開源 UI 元件的首選中心，是一個完全免費、社群驅動的註冊中心，匯集了與 shadcn/ui，100% 免費、開源、MIT 授權。
     * [Shadcn/ui](https://ui.shadcn.com/): 一個基於 **Radix UI** 和 **Tailwind CSS** 構建的可重用元件集。它不是一個元件庫，而是一系列你可以直接複製貼到應用中的元件。
 * **特定功能元件庫**
     * **資料顯示與輸入**
