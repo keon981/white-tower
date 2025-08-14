@@ -315,6 +315,7 @@
 
 ### OpenData API
 > 不管是寫程式的新手、老手，在做專案的時候，常常需要資料，這時候需要去找有趣、夠酷、免費的 API 來用！
+* [Try Public APIs for free](https://github.com/public-apis/public-apis): 由一群社群成員以及 APILayer 的工作人員精心維護。它包含來自眾多領域的大量公共 API，您可以將其用於自己的產品。您可以將其視為多年來由社群精心管理的 API 寶庫。
 * [政府資料開放平臺](https://data.gov.tw/): 為台灣政府各機關於職權範圍內取得或做成，且依法得公開之各類電子資料，包含文字、數據、圖片、影像、聲音、詮釋資料(metadata)等
 * [公共運輸整合資訊流通服務平台 (PTX)](https://ptx.transportdata.tw/PTX/)
 * [全球即時匯率API](https://tw.rter.info/howto_currencyapi.php)
