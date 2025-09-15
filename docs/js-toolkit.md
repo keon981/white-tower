@@ -9,17 +9,19 @@
   - [框架與函式庫](#框架與函式庫)
     - [建構工具](#建構工具)
     - [Web Development Frameworks 框架](#web-development-frameworks-框架)
-    - [React UI 元件庫](#react-ui-元件庫)
     - [狀態管理](#狀態管理)
     - [Hooks](#hooks)
     - [資料請求](#資料請求)
     - [表單與驗證](#表單與驗證)
     - [應用功能與服務 (Application Features \& Services)](#應用功能與服務-application-features--services)
     - [各式 JavaScript 輔助工具/函式庫](#各式-javascript-輔助工具函式庫)
-    - [動畫與動態效果](#動畫與動態效果)
-  - [CSS 生態系](#css-生態系)
+  - [UI and Styling](#ui-and-styling)
+    - [UI kits](#ui-kits)
+    - [特定功能元件庫](#特定功能元件庫)
     - [CSS 框架與工具](#css-框架與工具)
-  - [測試框架與工具](#測試框架與工具)
+  - [動畫與動態效果](#動畫與動態效果)
+  - [跨平台開發](#跨平台開發)
+  - [Testing](#testing)
     - [API 模擬與假資料](#api-模擬與假資料)
   - [資源](#資源)
     - [OpenData API](#opendata-api)
@@ -106,56 +108,6 @@
   * [Qwik City](https://qwik.builder.io/qwikcity/): Qwik 的官方全端框架。
   * [Astro](https://astro.build/): 用於構建快速、以內容為中心的靜態 Web 框架 網站。它獨特地允許使用多個 UI 框架 如 React、Vue 或 Svelte，將它們渲染為靜態 HTML，以便 增強的頁面速度和用戶體驗。
 
-### React UI 元件庫
-
-* **UI 元件庫 (Component Libraries)**
-  * [Material UI (MUI)](https://mui.com/): 基於 Google Material Design 指導原則的 React UI 框架，是當下最流行的選擇之一。
-  * [Ant Design](https://ant.design/index-cn): 螞蟻集團推出的企業級 UI 設計語言和 React 元件庫，廣泛用於中後台產品。
-    * [Ant Motion](https://motion.ant.design/): Ant Design 的動態效果設計規範與元件庫。
-  * [Base Web](https://baseweb.design/): Uber 開發的可訪問性優先的元件庫。
-  * [React Bootstrap](https://github.com/react-bootstrap/react-bootstrap): 將 Bootstrap 元件用 React 重構，使其更符合 React 的開發模式。
-* **無頭元件 (Headless Components)**
-  * [Radix UI](https://www.radix-ui.com/): 專注於可訪問性的無頭元件庫，不提供樣式。
-  * [Headless UI](https://headlessui.com/) 是由現在非常熱門的 Tailwindcss 團隊來開發的，與 Tailwind CSS 無縫整合的無頭元件。
-  * [Chakra UI](https://github.com/chakra-ui/chakra-ui): 一個簡單、模組化且高度可訪問的 UI 元件庫。它提供了良好的預設樣式，同時也極易客製化，兼具了完整元件庫和 Headless UI 的優點。
-    * 雖然官方並沒有明確表示 Chakra UI 是 Headless 元件庫，但 Chakra UI 提供的基礎樣式確實比較單調，但他也一樣能夠完全客製化調整元件的所有樣式，因此也可以視為 Headless 元件庫。
-    * ==特別強調 accessibility== ，也就是說這個元件庫是考慮到了各種不同使用網站的情境，對於一些公部門的案子對這部分有比較高要求的話，這會是一個好選擇。
-  * [Horizon UI](https://horizon-ui.com/): 基於 **Chakra UI** 進行二次開發的元件庫，專為快速搭建美觀的後台管理儀表板（Admin Dashboard）而設計。
-  * [NextUI](https://nextui.org/):  基於 Tailwind CSS 和 React Aria 的 UI 庫。
-  * [Horizon UI](https://horizon-ui.com/): 基於 Chakra UI 的後台儀表板。
-  * [React Aria](https://react-spectrum.adobe.com/react-aria/): Adobe 打造的無頭 UI Hooks，專注於行為與可訪問性。
-  * 🌟[Plate.js]: 是一個基於 Slate.js 的富文本編輯器框架，提供了豐富的插件和組件，可以快速構建出功能強大的編輯器。近期社群越來越多人使用，除了把各類編輯器細節都考量了，**甚至可以用很輕鬆的方式，整合 AI 功能到編輯器中**。不論是想在產品中加入富文本編輯器，或是想理解這種進階前端如何實作，都推薦可以去讀原始碼。
-* **特定功能元件庫**
-  * **資料顯示與輸入**
-    * [TanStack Table](https://tanstack.com/table): 用於建立強大表格和資料網格的無頭 UI 工具。
-    * [ChatUI](https://chatui.io/components/card):  對話式 UI 元件庫。
-    * [react-textarea-autosize](https://www.npmjs.com/package/react-textarea-autosize): 一個輕量級的 React 元件，能讓 `<textarea>` 根據使用者輸入的內容自動調整高度。
-    * [react-markdown](https://github.com/remarkjs/react-markdown): 將 Markdown 轉換為 React 元件的函式庫。
-    * [llm-ui](https://llm-ui.com/docs/quick-start): 用於構建 LLM 應用程式的 UI 元件庫。
-    * [Shuffle.js](https://vestride.github.io/Shuffle/): 響應式、可篩選的網格佈局函式庫。
-  * **圖表函式庫 (Charting Libraries)**
-    * [D3.js](https://d3js.org/): 資資料驅動文件的視覺化標準，提供強大的底層 API。
-    * [C3.js](https://c3js.org/):  基於 D3.js 的可重用圖表庫，簡化了圖表生成。
-    * [Recharts](https://recharts.org/en-US/):  基於 React 和 D3 的圖表庫，提供聲明式的 React 元件。
-    * [Chart.js](https://www.chartjs.org/docs/latest/): 簡單靈活的 JavaScript 圖表庫。
-    * [Highcharts](https://www.highcharts.com/): 功能強大且成熟的商業圖表庫。
-    * [Victory](https://formidable.com/open-source/victory/docs/): 由 Formidable 團隊開發的 React 和 React Native 圖表元件集合，以其組合性和易於客製化著稱。
-  * **資料匯出 (Data Export)**
-    * [SheetJS](https://docs.sheetjs.com/): 用於讀取、編輯和匯出多種電子表格格式（如 XLSX, XLS, CSV）的強大函式庫。
-    * [ExcelJS](https://github.com/exceljs/exceljs): 一個可以讀取、操作和寫入 Excel XLSX 和 CSV 檔案的函式庫，支援豐富的樣式和功能。
-  * **畫布與白板**
-    * [tldraw](https://www.tldraw.com/): 一個功能強大、易於整合的開源白板函式庫。
-    * [Excalidraw](https://excalidraw.com/): 一個非常受歡迎的虛擬白板工具，用於繪製手繪風格的圖表。
-* **shadcn cli registry**: 可隨時下載你想要的 component 或更新它們。
-  * [shadcn/ui](https://ui.shadcn.com/): 一個基於 **Radix UI** 和 **Tailwind CSS** 構建的可重用元件集。它不是一個元件庫，而是一系列你可以直接複製貼到應用中的元件。
-  * [shadcn.io](https://www.shadcn.io/): 精彩開源 shadcn/ui 元件的首選中心，是一個完全免費、社群驅動的註冊中心，匯集了與 shadcn/ui，100% 免費、開源、MIT 授權。
-  * [NextGen JavaScript shadcn/ui]: 探索精選的 shadcn/ui 元件、模板、區塊、UI 元件庫、主題和工具。
-  * **動畫元件與特效集 (Animated Components & Effects):**
-    * [Magic UI](https://magicui.design/): 專為設計工程師打造的 UI 元件集，提供了豐富的預設樣式和精緻動畫，基於 Framer Motion 和 Tailwind CSS。
-    * [Animata](https://animata.design/): 一個開源的動畫、效果和互動集合，使用 Tailwind CSS 和 React 建立，可輕鬆複製貼上整合到專案中。
-    * [Eldora UI](https://www.eldoraui.site/): 一個以精緻動畫聞名的 React 元件庫。:
-    * [Animate UI](https://animate-ui.com/): 是用 Tailwind 和 Motion 寫的 component library
-
 ### 狀態管理
 
 * [Zustand](https://github.com/pmndrs/zustand): 提供了一種輕量級、直觀的狀態管理方式，適合那些追求簡潔和高效的 React 開發者。它的主要特點是易於上手，無需繁瑣的設定和模板，使得狀態管理更加靈活和直觀。
@@ -165,6 +117,7 @@
   * [DvaJS](https://dvajs.com/): 基於 Redux 和 Redux-Saga 的數據流方案。
 * [Jotai](https://jotai.org/) 強調原子化的狀態管理，通過將狀態分解為更小、更獨立的單位（原子），實現了更細緻和模塊化的狀態控制。這種方法不僅提升了狀態管理的可維護性，也增強了組件間狀態的可重用性。
 * [XState](https://xstate.js.org/) 以有限狀態機（Finite State Machines）和狀態圖（Statecharts）為基礎，提供了一種結構化的狀態管理方法。它適合於需要精細管理狀態轉換和行為的複雜應用，使狀態的變化更可預測和容易理解。
+* [RxJs](https://rxjs.angular.tw/)：是一個基於JavaScript 的程式函式庫，它提供了一種聲明式的方式來處理非同步和事件驅動的程式碼，核心思想是「可觀察物件」(Observable) 和「觀察者」(Observer) 模式。 RxJS 透過組合操作符(Operators) 來處理事件序列，使得複雜的非同步程式邏輯更容易理解和維護，並能有效地管理事件流的處理。 
 
 ### Hooks
 
@@ -232,7 +185,85 @@
 * **應用功能與服務**
   * [@ffmpeg/ffmpeg](https://ffmpegwasm.netlify.app/docs/overview): 在瀏覽器中使用 FFmpeg 進行影片/音訊編碼與轉檔
 
-### 動畫與動態效果
+## UI and Styling
+
+### UI kits
+
+* **UI Components**
+  * [Material UI (MUI)](https://mui.com/): 基於 Google Material Design 指導原則的 React UI 框架，是當下最流行的選擇之一。
+  * [Ant Design](https://ant.design/index-cn): 螞蟻集團推出的企業級 UI 設計語言和 React 元件庫，廣泛用於中後台產品。
+    * [Ant Motion](https://motion.ant.design/): Ant Design 的動態效果設計規範與元件庫。
+  * [Base Web](https://baseweb.design/): Uber 開發的可訪問性優先的元件庫。
+  * [React Bootstrap](https://github.com/react-bootstrap/react-bootstrap): 將 Bootstrap 元件用 React 重構，使其更符合 React 的開發模式。
+* **Headless Components**
+  * [Radix UI](https://www.radix-ui.com/): 專注於可訪問性的無頭元件庫，不提供樣式。
+  * [Headless UI](https://headlessui.com/) 是由現在非常熱門的 Tailwindcss 團隊來開發的，與 Tailwind CSS 無縫整合的無頭元件。
+  * [Chakra UI](https://github.com/chakra-ui/chakra-ui): 一個簡單、模組化且高度可訪問的 UI 元件庫。它提供了良好的預設樣式，同時也極易客製化，兼具了完整元件庫和 Headless UI 的優點。
+    * 雖然官方並沒有明確表示 Chakra UI 是 Headless 元件庫，但 Chakra UI 提供的基礎樣式確實比較單調，但他也一樣能夠完全客製化調整元件的所有樣式，因此也可以視為 Headless 元件庫。
+    * ==特別強調 accessibility== ，也就是說這個元件庫是考慮到了各種不同使用網站的情境，對於一些公部門的案子對這部分有比較高要求的話，這會是一個好選擇。
+  * [Horizon UI](https://horizon-ui.com/): 基於 **Chakra UI** 進行二次開發的元件庫，專為快速搭建美觀的後台管理儀表板（Admin Dashboard）而設計。
+  * [NextUI](https://nextui.org/):  基於 Tailwind CSS 和 React Aria 的 UI 庫。
+  * [Horizon UI](https://horizon-ui.com/): 基於 Chakra UI 的後台儀表板。
+  * [React Aria](https://react-spectrum.adobe.com/react-aria/): Adobe 打造的無頭 UI Hooks，專注於行為與可訪問性。
+  * 🌟[Plate.js]: 是一個基於 Slate.js 的富文本編輯器框架，提供了豐富的插件和組件，可以快速構建出功能強大的編輯器。近期社群越來越多人使用，除了把各類編輯器細節都考量了，**甚至可以用很輕鬆的方式，整合 AI 功能到編輯器中**。不論是想在產品中加入富文本編輯器，或是想理解這種進階前端如何實作，都推薦可以去讀原始碼。
+* **shadcn cli registry**: 可隨時下載你想要的 component 或更新它們。
+  * [shadcn/ui](https://ui.shadcn.com/): 一個基於 **Radix UI** 和 **Tailwind CSS** 構建的可重用元件集。它不是一個元件庫，而是一系列你可以直接複製貼到應用中的元件。
+  * [shadcn.io](https://www.shadcn.io/): 精彩開源 shadcn/ui 元件的首選中心，是一個完全免費、社群驅動的註冊中心，匯集了與 shadcn/ui，100% 免費、開源、MIT 授權。
+  * [NextGen JavaScript shadcn/ui]: 探索精選的 shadcn/ui 元件、模板、區塊、UI 元件庫、主題和工具。
+  * **動畫元件與特效集 (Animated Components & Effects):**
+    * [Magic UI](https://magicui.design/): 專為設計工程師打造的 UI 元件集，提供了豐富的預設樣式和精緻動畫，基於 Framer Motion 和 Tailwind CSS。
+    * [Animata](https://animata.design/): 一個開源的動畫、效果和互動集合，使用 Tailwind CSS 和 React 建立，可輕鬆複製貼上整合到專案中。
+    * [Eldora UI](https://www.eldoraui.site/): 一個以精緻動畫聞名的 React 元件庫。:
+    * [Animate UI](https://animate-ui.com/): 是用 Tailwind 和 Motion 寫的 component library
+
+### 特定功能元件庫
+  * **資料顯示與輸入**
+    * [TanStack Table](https://tanstack.com/table): 用於建立強大表格和資料網格的無頭 UI 工具。
+    * [ChatUI](https://chatui.io/components/card):  對話式 UI 元件庫。
+    * [react-textarea-autosize](https://www.npmjs.com/package/react-textarea-autosize): 一個輕量級的 React 元件，能讓 `<textarea>` 根據使用者輸入的內容自動調整高度。
+    * [react-markdown](https://github.com/remarkjs/react-markdown): 將 Markdown 轉換為 React 元件的函式庫。
+    * [llm-ui](https://llm-ui.com/docs/quick-start): 用於構建 LLM 應用程式的 UI 元件庫。
+    * [Shuffle.js](https://vestride.github.io/Shuffle/): 響應式、可篩選的網格佈局函式庫。
+  * **圖表函式庫 (Charting Libraries)**
+    * [D3.js](https://d3js.org/): 資資料驅動文件的視覺化標準，提供強大的底層 API。
+    * [C3.js](https://c3js.org/):  基於 D3.js 的可重用圖表庫，簡化了圖表生成。
+    * [Recharts](https://recharts.org/en-US/):  基於 React 和 D3 的圖表庫，提供聲明式的 React 元件。
+    * [Chart.js](https://www.chartjs.org/docs/latest/): 簡單靈活的 JavaScript 圖表庫。
+    * [Highcharts](https://www.highcharts.com/): 功能強大且成熟的商業圖表庫。
+    * [Victory](https://formidable.com/open-source/victory/docs/): 由 Formidable 團隊開發的 React 和 React Native 圖表元件集合，以其組合性和易於客製化著稱。
+  * **資料匯出 (Data Export)**
+    * [SheetJS](https://docs.sheetjs.com/): 用於讀取、編輯和匯出多種電子表格格式（如 XLSX, XLS, CSV）的強大函式庫。
+    * [ExcelJS](https://github.com/exceljs/exceljs): 一個可以讀取、操作和寫入 Excel XLSX 和 CSV 檔案的函式庫，支援豐富的樣式和功能。
+  * **畫布與白板**
+    * [tldraw](https://www.tldraw.com/): 一個功能強大、易於整合的開源白板函式庫。
+    * [Excalidraw](https://excalidraw.com/): 一個非常受歡迎的虛擬白板工具，用於繪製手繪風格的圖表。
+
+### CSS 框架與工具
+
+* **CSS 框架 (CSS Frameworks)**
+  * [Bootstrap](https://getbootstrap.com/): 最知名的前端框架之一，提供豐富的預設元件。
+  * [Pure.css](https://purecss.io/): 由 Yahoo 出品的老牌 CSS 框架，以其極致輕量和模組化著稱。架構簡單小巧，外型清新，非常適合學習 CSS 的架構與模組化方法。
+  * [UIKit](https://getuikit.com/): 一個輕量級、模組化的前端框架，用於開發快速而強大的 Web 介面。
+  * [NES.css](https://github.com/nostalgic-css/NES.css): NES/FC 遊戲機風格的 CSS 框架，充滿復古趣味。
+  * [Paper CSS](https://www.getpapercss.com/): 手繪紙張風格的 CSS 庫。
+* **實用優先 CSS (Utility-First Frameworks)**
+  * [Tailwind CSS](https://tailwindcss.com/): 高度可客製化的實用優先 CSS 框架，透過組合 class 來建構設計。
+    * [Tailwind Gradient Background Generator](https://gradienty.codes/tailwind-gradient-background): 使用 Tailwind CSS 完成的漸層模板。
+    * [awesome-tailwindcss](https://github.com/aniftyco/awesome-tailwindcss): Tailwind CSS 的資源集合，包含範例、教學、工具和插件等。
+* **CSS 預處理器與後處理器 (Pre-processors & Post-processors)**
+  * [Sass](https://sass-lang.com/): 成熟強大的 CSS 擴充語言，提供變數、巢狀規則、mixin 等功能。
+  * [Less](http://lesscss.org/): 動態樣式表語言，擴充了 CSS 的功能。
+  * [PostCSS](https://postcss.org/): 一個用 JavaScript 轉換 CSS 樣式的工具。它本身功能不多，但透過豐富的插件生態（如 Autoprefixer），可以實現語法轉換、自動加前綴、壓縮等後處理任務。
+* **CSS-in-JS**
+  * [styled-components](https://styled-components.com/):  在 JavaScript 中撰寫 CSS 的函式庫，實現元件級的樣式封裝。
+    * 註：2025 年 3 月 18 日，styled-components 核心維護者宣布其進入維護模式，標誌著前端樣式方案的一個轉折點。
+  * [Emotion](https://emotion.sh/): 高效能的 CSS-in-JS 函式庫，提供多種樣式撰寫方式。
+* **基底樣式/樣板**
+  * [Meyer&#39;s Reset](https://meyerweb.com/eric/tools/css/reset/): 經典的 CSS Reset，旨在移除所有瀏覽器預設樣式。
+  * [Normalize.css](http://necolas.github.io/normalize.css/): 保留有用的預設值，並修正瀏覽器之間的樣式不一致。
+  * [A Modern CSS Reset](https://andy-bell.co.uk/a-more-modern-css-reset/): 基於現代 CSS 特性的重置方案。
+
+## 動畫與動態效果
 
 這些函式庫和工具專注於為網頁帶來豐富的視覺動態效果，從簡單的 CSS 過渡到複雜的 JavaScript 動畫。
 
@@ -268,34 +299,13 @@
   * [draggable.js](https://shopify.github.io/draggable/): 由 Shopify 開發，用於實現元素拖曳功能的函式庫。
   * [Easing Wizard](https://easingwizard.com/): CSS `transition-timing-function` 的視覺化編輯器。
 
-## CSS 生態系
+## 跨平台開發
 
-### CSS 框架與工具
+* [Electron](https://www.electronjs.org/)，用於使用JavaScript、HTML 和CSS 來建立跨平台的桌面應用程式。 它透過嵌入 Node.js 作為後端和 Chromium 的渲染引擎作為前端，讓開發者能夠在Windows、macOS 和Linux 上運行同一套程式碼。
+* [Tauri](https://v2.tauri.app/): 是一款使用Rust 作為後端和網頁技術（如HTML、CSS、JavaScript）作為前端來創建跨平台桌面應用程式的開源框架。 它最大的優勢在於利用作業系統內建的WebView，打造出比同類框架（如Electron）更小巧、高效且安全的應用程式，同時讓前端開發者能使用熟悉的技術開發使用者介面。 
+* [React Native](https://reactnative.dev/): 是一個由Meta開發的開源應用程式架構，它允許開發者使用JavaScript和React來開發可以在多個平台（iOS、Android、Web和Windows）上運行的原生應用程式。 
 
-* **CSS 框架 (CSS Frameworks)**
-  * [Bootstrap](https://getbootstrap.com/): 最知名的前端框架之一，提供豐富的預設元件。
-  * [Pure.css](https://purecss.io/): 由 Yahoo 出品的老牌 CSS 框架，以其極致輕量和模組化著稱。架構簡單小巧，外型清新，非常適合學習 CSS 的架構與模組化方法。
-  * [UIKit](https://getuikit.com/): 一個輕量級、模組化的前端框架，用於開發快速而強大的 Web 介面。
-  * [NES.css](https://github.com/nostalgic-css/NES.css): NES/FC 遊戲機風格的 CSS 框架，充滿復古趣味。
-  * [Paper CSS](https://www.getpapercss.com/): 手繪紙張風格的 CSS 庫。
-* **實用優先 CSS (Utility-First Frameworks)**
-  * [Tailwind CSS](https://tailwindcss.com/): 高度可客製化的實用優先 CSS 框架，透過組合 class 來建構設計。
-    * [Tailwind Gradient Background Generator](https://gradienty.codes/tailwind-gradient-background): 使用 Tailwind CSS 完成的漸層模板。
-    * [awesome-tailwindcss](https://github.com/aniftyco/awesome-tailwindcss): Tailwind CSS 的資源集合，包含範例、教學、工具和插件等。
-* **CSS 預處理器與後處理器 (Pre-processors & Post-processors)**
-  * [Sass](https://sass-lang.com/): 成熟強大的 CSS 擴充語言，提供變數、巢狀規則、mixin 等功能。
-  * [Less](http://lesscss.org/): 動態樣式表語言，擴充了 CSS 的功能。
-  * [PostCSS](https://postcss.org/): 一個用 JavaScript 轉換 CSS 樣式的工具。它本身功能不多，但透過豐富的插件生態（如 Autoprefixer），可以實現語法轉換、自動加前綴、壓縮等後處理任務。
-* **CSS-in-JS**
-  * [styled-components](https://styled-components.com/):  在 JavaScript 中撰寫 CSS 的函式庫，實現元件級的樣式封裝。
-    * 註：2025 年 3 月 18 日，styled-components 核心維護者宣布其進入維護模式，標誌著前端樣式方案的一個轉折點。
-  * [Emotion](https://emotion.sh/): 高效能的 CSS-in-JS 函式庫，提供多種樣式撰寫方式。
-* **基底樣式/樣板**
-  * [Meyer&#39;s Reset](https://meyerweb.com/eric/tools/css/reset/): 經典的 CSS Reset，旨在移除所有瀏覽器預設樣式。
-  * [Normalize.css](http://necolas.github.io/normalize.css/): 保留有用的預設值，並修正瀏覽器之間的樣式不一致。
-  * [A Modern CSS Reset](https://andy-bell.co.uk/a-more-modern-css-reset/): 基於現代 CSS 特性的重置方案。
-
-## 測試框架與工具
+## Testing
 
 * **單元測試**
   * **測試框架 (Test Runners)**
