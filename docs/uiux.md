@@ -94,10 +94,12 @@
 > [12個配色網站推薦與操作教學，色盤工具幫你訂定品牌主視覺](https://deanlife.blog/color-matching-websites-recommend/)
 
 ### 選色工具
-* :stars: [Happy Hues](https://www.happyhues.co/palettes/5) - 配色教學網站，目前共收錄的 17 種調色組合，有實際示範套用顏色的網站的按鈕、文字、圖示、資訊卡的效果，同時 Happy Hues 網站哪也介紹了各種顏色心理學在生活中的應用及經常連結的關鍵字。
+* [OKLCH Color Picker & Converter](https://oklch.com/): OKLCH 和 LCH 色彩空間的顏色選擇器和轉換器。OKLCH 是一種對顏色進行編碼的新方法（如十六進位、RGBA 或 HSL）。
+* [oklch.fyi](https://oklch.fyi/) :專門用於 oklch 顏色的小工具，它可以幫助產生 oklch 調色板，也可以將你現有的 CSS 變數轉換為 oklch 等等。
 * :fireworks: [Material Design Colors](https://materialui.co/colors/) →一款非常齊全的色盤工具，直接用表格大範圍秀出由淺至深的七彩顏色，讓使用者能直接選擇最對眼的顏色，選好也能直接複製色碼。
 * :cake: [Coolors](https://coolors.co/) →一款簡單、快速、無須安裝就能使用的線上配色工具，你可以個別微調顏色的濃淡、配色順序，或是直接換色。上方有個相機icon，也能上傳照片，它就能抓取圖片的主色。
     * [Coolors.app](https://coloors86.netlify.app/)
+* [Colors](https://www.colors.tools/) 是一款免費且簡單的顏色工具。藉助色彩的不同功能，如色彩調和、色彩細節、色彩混色器、色調等，像是互補色、類比色、三色色、分裂互補色、四色和方形搭配，產生統一和諧的效果！
 * [Chinaz](http://tool.chinaz.com/tools/use) - 該網站提供了豐富的配色資源，包括在線調色板，網頁常用色彩，網絡安全色以及網頁顏色選擇器，會使您UI配色的一個很好的幫助。建議對色彩運用比較初級的設計師可以做一個參考。
 * [Nippon Color ](https://nipponcolors.com/) →一款充滿了日系風格的設計，每種顏色都被賦予了非常日式的名字，整體用起來極具渲染力。這個網站雖然注重體驗跟設計，<font color=red>但對於想挑選顏色的人來說可能不會是第一首選，因為他無法直接複製色碼，也沒有提供搭配好的顏色讓使用者挑選，實用性上跟其他款比起來稍弱一些。</font>
 * [Material Design The color system](https://m2.material.io/design/color/the-color-system.html#tools-for-picking-colors)
@@ -110,7 +112,7 @@
 1. [Eva Design System](https://colors.eva.design/) →方便的配色工具，設定主顏色後，自動演算出成功訊息、一般資訊、警告訊息和危險通知顏色等推薦配色。按下「Export」即可輕鬆匯出當下配色的圖檔。
 
 ### 漸層顏色
-* [Webgradients](https://webgradients.com/)→總是配不出好看的漸層色彩嗎？這個網站提供了一些漸層範例提供給大家參考，你可以下載喜歡的配色圖檔，也能在個別的右下角複製CSS。
+* [Webgradients](https://webgradients.com/) :這個網站提供了一些漸層範例提供給大家參考，可以下載喜歡的配色圖檔，也能在個別的右下角複製CSS。
 
 ### 吸色工具
 * [Get Colors from Image (BETA)](http://html-color-codes.info/colors-from-image/)
@@ -119,9 +121,12 @@
 
 ### 色彩靈感
 #### 配色參考
+* :stars: [Happy Hues](https://www.happyhues.co/palettes/5) - 配色教學網站，目前共收錄的 17 種調色組合，有實際示範套用顏色的網站的按鈕、文字、圖示、資訊卡的效果，同時 Happy Hues 網站哪也介紹了各種顏色心理學在生活中的應用及經常連結的關鍵字。
+* [Adobe Color](https://color.adobe.com/): 是一個 Web 應用程式和創意社群平台，可以在這建立喜歡的顏色並與其他設計師分享顏色靈感。 
 * [Color Hunt](https://colorhunt.co/) →最大的特色就是能讓你不用思考要怎麼搭，==直接給一堆設計師和藝術家精心配置好的顏色，直接從中選出你喜歡的配色就好，非常適合沒有想法的人==。這款每一種配色組合都有四種顏色，可能是對比色或相近色，每種組合不會讓人看起來很突兀或不搭。
 * [BrandColors](https://brandcolors.net/) → 是一個集結全世界各大官方品牌色的網站，你能從這個網站找到世界知名企業的 LOGO 或品牌色，並複製他們的色碼。這個網站比較適合用在「參考」的層面上面，==可以藉由觀察各大品牌的配色，進而思考背後的意義，再拉回自己的品牌配色上，找到最適合自己品牌的顏色。==
 * [Colorion ](https://www.colorion.co/) →提供上萬種由設計師精心搭配的配色選擇，能直接複製色碼使用。如果有自己喜歡的配色，註冊並登入帳號後還能儲存或下載該組配色。
+* [Color Lisa](https://colorlisa.com/) 將世界上最偉大藝術家的傑作製作出一個調色盤列表。 每個調色盤都是由痴迷於色彩的設計師、藝術家、博物館館長和色彩理論大師精心配出來的顏色。不論是知名畫作蒙娜麗莎的微笑的配色或是亞維農的少女配色，只要是你想得到的作品，這裡通通都找得到！
 * [驚豔！101款讓人愛不釋手的 免費商用設計配色組合](https://www.shutterstock.com/zh-Hant/blog/101-free-color-combinations-design-inspiration)
 
 #### 色彩命名
@@ -159,11 +164,11 @@
 * [opentype.dev](https://opentype.dev/)
 
 
-
 ## 設計參考
 
 ### 元件
 
+* [Craft with AI](https://21st.dev/home):收錄多種 UI 庫，節省大量的 UI 和 UX 研究時間。除了有不同的 components、screens、和 themes 還直接給你相關的 code 供你下載，如果沒看到喜歡的也可以用 AI 做出屬於你自己的體驗。
 * [不能忽视的小程序UI组件库，设计师快来看！](https://pixso.cn/designskills/7-applet-ui-component-libraries/)
 * [Pa-Tu | WEBパーツをカスタマイズしてコピペできる](https://pa-tu.work/)
 * [Collect UI](http://collectui.com/)→ 每日更新，它收集很多優秀的UI範例，左邊分類也有依照不同的功能分類，可以說是非常方便查找資料的網站。
@@ -172,7 +177,7 @@
 ### 版面
 * [csslayout](https://csslayout.io/)：流行佈局和圖案的集合
 * [layoutit!](https://www.layoutit.com/cn)→建立自己的網站雛形!!
-
+* [Pricing Pages Design](https://pricingpages.design/): 這個網站收集各種定價頁的設計。
 
 
 ### 作品收集
